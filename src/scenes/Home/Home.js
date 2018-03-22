@@ -7,6 +7,7 @@ import TravaillerEnsemble from './TravaillerEnsemble'
 import Intervenir from './Intervenir'
 import Presentation from './Presentation'
 import Contact from './Contact'
+import Carousel from './Carousel/Carousel'
 
 const styles = theme => ({
   content: {
@@ -19,6 +20,7 @@ const styles = theme => ({
 const Home = ({ classes }) => (
   <Fragment>
     <Header />
+    <Carousel />
     <div className={classes.content}>
       <Enjeu />
       <Approche />
