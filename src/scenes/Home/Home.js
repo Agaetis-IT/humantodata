@@ -5,11 +5,14 @@ import withStyles from 'material-ui/styles/withStyles'
 import Approche from './Approche'
 import TravaillerEnsemble from './TravaillerEnsemble'
 import Intervenir from './Intervenir'
+import Presentation from './Presentation'
+import Contact from './Contact'
 
 const styles = theme => ({
   content: {
     maxWidth: 740,
     margin: 'auto',
+    paddingBottom: 70,
   },
 })
 
@@ -21,6 +24,8 @@ const Home = ({ classes }) => (
       <Approche />
       <TravaillerEnsemble />
       <Intervenir />
+      <Presentation />
+      <Contact />
     </div>
   </Fragment>
 )
