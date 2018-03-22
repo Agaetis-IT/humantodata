@@ -12,7 +12,7 @@ const styles = theme => ({
   content: {
     maxWidth: 740,
     margin: 'auto',
-    paddingBottom: 70,
+    paddingBottom: 90,
   },
 })
 

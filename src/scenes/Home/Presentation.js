@@ -1,6 +1,7 @@
 import React from 'react'
 import { withStyles, Typography } from 'material-ui'
 import Separator from '../../components/Separator'
+import teamImg from '../../images/team.png'
 
 const styles = theme => ({
   container: {
@@ -17,27 +18,64 @@ const styles = theme => ({
   },
   separator: {
     width: '60%',
-    margin: '10px auto',
+    margin: '15px auto',
+  },
+  team: {
+    display: 'block',
+    margin: 'auto',
+    marginBottom: 30,
+  },
+  bullet: {
+    '&::before': {
+      content: "''",
+      display: 'inline-block',
+      width: 10,
+      height: 10,
+      marginRight: 8,
+      backgroundColor: theme.palette.primary.main,
+      borderRadius: '50%',
+    },
   },
 })
 
 const Presentation = ({ classes }) => (
   <div id="presentation" className={classes.container}>
     <Typography className={classes.header} align="center" gutterBottom>
-      Pourquoi travailler ensemble ?
+      Qui sommes nous ?
     </Typography>
     <Typography align="center" gutterBottom>
-      Parce que vous pourrez valider rapidement l’efficacité et la pertinence de
-      votre transformation digitale par “petits pas” concrets.
+      HumanToData est une marque du consortium{' '}
+      <a href="https://www.linkedin.com/company/agaetis/">Agaetis</a>,{' '}
+      <a href="https://www.linkedin.com/company/delta-mu/">Deltamu</a>,{' '}
+      <a href="https://www.linkedin.com/company/pyramis-consulting/">
+        Pyramis Consulting
+      </a>{' '}
+      et{' '}
+      <a href="https://www.linkedin.com/company/phimeca-engineering/">
+        PHIMECA Engineering
+      </a>{' '}
+      qui ont signé un contrat de partenariat pour la mise en place d’une offre
+      commune au service de la{' '}
+      <b>digitalisation effective et efficiente des industries.</b>
     </Typography>
     <Separator className={classes.separator} />
-    <Typography variant="body2" align="center" gutterBottom>
-      Avec pour objectif immédiat d’obtenir à très court terme des résultats
-      probants : réduction des rebuts ou des arrêts de la chaîne de production,
-      amélioration de la maîtrise de la qualité des produits... Et
-      progressivement, être en capacité de{' '}
-      <span className={classes.primary}>co-construire</span> un éco-système de
-      production plus performant, plus efficient, plus stratégique.
+    <img className={classes.team} src={teamImg} alt="team" />
+    <Typography variant="body2" gutterBottom>
+      Ensemble, nous vous proposons de co-construire une solution collaborative
+      à forte valeur ajoutée reposant sur la combinaison des 4 savoir-faire
+      éprouvés :
+    </Typography>
+    <Typography variant="body2" className={classes.bullet} gutterBottom>
+      Pilotage de la performance industrielle ;
+    </Typography>
+    <Typography variant="body2" className={classes.bullet} gutterBottom>
+      Modélisation des phénomènes ;
+    </Typography>
+    <Typography variant="body2" className={classes.bullet} gutterBottom>
+      Véracité des valeurs mesurées ;
+    </Typography>
+    <Typography variant="body2" className={classes.bullet} gutterBottom>
+      Stratégie de traitement pour l’exploitation des données.
     </Typography>
   </div>
 )

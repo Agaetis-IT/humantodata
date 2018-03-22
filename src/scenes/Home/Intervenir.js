@@ -18,12 +18,12 @@ const styles = theme => ({
   },
   separator: {
     width: '60%',
-    margin: '10px auto',
+    margin: '15px auto',
   },
 })
 
 const Intervenir = ({ classes }) => (
-  <div id="travailler-ensemble" className={classes.container}>
+  <div id="intervenir" className={classes.container}>
     <Typography className={classes.header} align="center" gutterBottom>
       Comment nous pouvons intervenir ?
     </Typography>

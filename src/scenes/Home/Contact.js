@@ -1,6 +1,5 @@
 import React from 'react'
-import { withStyles, Typography, Grid, IconButton } from 'material-ui'
-import { Email, Twitter } from 'mdi-material-ui'
+import { withStyles, Typography } from 'material-ui'
 import Separator from '../../components/Separator'
 
 const styles = theme => ({
@@ -18,7 +17,7 @@ const styles = theme => ({
   },
   separator: {
     width: '60%',
-    margin: '10px auto',
+    margin: '15px auto',
   },
   icons: {
     margin: 'auto',
@@ -34,7 +33,7 @@ const styles = theme => ({
 })
 
 const Contact = ({ classes }) => (
-  <div id="presentation" className={classes.container}>
+  <div id="contact" className={classes.container}>
     <Typography className={classes.header} align="center" gutterBottom>
       Contactez-nous
     </Typography>
@@ -45,14 +44,12 @@ const Contact = ({ classes }) => (
       tester la pertinence de la démarche.
     </Typography>
     <Separator className={classes.separator} />
-    <div className={classes.icons}>
-      <IconButton href="#">
-        <Email className={classes.icon} />
-      </IconButton>
-      <IconButton href="#">
-        <Twitter className={classes.icon} />
-      </IconButton>
-    </div>
+    <Typography align="center" variant="body2" gutterBottom>
+      Centre d’Affaires du Zénith - 48 rue de Sarliève - 63800 Cournon
+      d’Auvergne - France{' '}
+      <a href="mailto:contact@humantodata.com">contact@humantodata.com</a> -{' '}
+      <a href="www.humantodata.com">www.humantodata.com</a>
+    </Typography>
   </div>
 )
 

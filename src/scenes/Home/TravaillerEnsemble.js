@@ -17,7 +17,7 @@ const styles = theme => ({
   },
   separator: {
     width: '60%',
-    margin: '10px auto',
+    margin: '15px auto',
   },
 })
 

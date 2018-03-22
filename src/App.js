@@ -10,6 +10,9 @@ const styles = theme => ({
     body: {
       backgroundColor: theme.palette.white,
     },
+    a: {
+      color: theme.palette.primary.main,
+    },
   },
   container: {
     maxWidth: 960,
