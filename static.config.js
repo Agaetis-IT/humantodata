@@ -11,6 +11,7 @@ import {
 import theme from './src/theme'
 
 export default {
+  basePath: 'humantodata',
   getSiteData: () => ({
     title: 'React Static',
   }),
