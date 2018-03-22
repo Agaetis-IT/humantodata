@@ -2,11 +2,14 @@
   "name": "humantodata",
   "version": "1.0.0",
   "main": "index.js",
+  "homepage": "https://agaetis-it.github.io/humantodata",
   "scripts": {
     "start": "react-static start",
     "build": "react-static build",
     "serve": "serve dist -p 3000",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "predeploy": "react-static build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "classnames": "^2.2.5",
@@ -27,6 +30,7 @@
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-react": "^7.7.0",
+    "gh-pages": "^1.1.0",
     "prettier": "^1.11.1",
     "serve": "^6.1.0"
   }
