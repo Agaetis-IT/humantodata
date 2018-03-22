@@ -57,7 +57,7 @@ const styles = theme => ({
 })
 
 const Enjeu = ({ classes }) => (
-  <div className={classes.container}>
+  <div id="enjeu" className={classes.container}>
     <div className={classes.header}>
       <Typography className={classes.title}>
         Votre enjeu des 5 prochaines années :
@@ -90,7 +90,7 @@ const Enjeu = ({ classes }) => (
       alt=""
     />
     <div className={classes.block}>
-      <Typography className={classes.blocTitle}>
+      <Typography className={classes.blocTitle} gutterBottom>
         Vos défis concrets :
       </Typography>
       <Typography className={classes.blocSubtitle}>

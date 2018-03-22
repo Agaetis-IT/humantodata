@@ -24,16 +24,16 @@ const Header = ({ classes }) => (
     <div className={classes.actions}>
       <HeaderButton
         items={[
-          { label: 'Vos enjeux' },
-          { label: 'Notre approche' },
-          { label: 'Pourquoi travailler ensemble ?' },
-          { label: 'Comment nous pouvons intervenir ?' },
+          { label: 'Vos enjeux', href: '#enjeu' },
+          { label: 'Notre approche', href: '#approche' },
+          { label: 'Pourquoi travailler ensemble ?', href: '#travailler' },
+          { label: 'Comment nous pouvons intervenir ?', href: '#intervenir' },
         ]}
       >
         Solutions
       </HeaderButton>
-      <HeaderButton>Qui sommes nous ?</HeaderButton>
-      <HeaderButton>Nous contacter</HeaderButton>
+      <HeaderButton href="#presentation">Qui sommes nous ?</HeaderButton>
+      <HeaderButton href="#contact">Nous contacter</HeaderButton>
     </div>
   </div>
 )

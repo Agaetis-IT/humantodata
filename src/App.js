@@ -5,12 +5,17 @@ import Routes from 'react-static-routes'
 import CssBaseline from 'material-ui/CssBaseline'
 import { withStyles } from 'material-ui/styles'
 
-const styles = {
+const styles = theme => ({
+  '@global': {
+    body: {
+      backgroundColor: theme.palette.white,
+    },
+  },
   container: {
     maxWidth: 960,
     margin: 'auto',
   },
-}
+})
 
 class App extends PureComponent {
   // Remove the server-side injected CSS.

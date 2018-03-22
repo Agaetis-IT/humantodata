@@ -22,7 +22,7 @@ export default {
       },
       {
         is404: true,
-        component: 'src/scenes/404',
+        component: 'src/scenes/Home/Home',
       },
     ]
   },

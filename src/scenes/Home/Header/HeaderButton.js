@@ -21,7 +21,7 @@ class HeaderButton extends React.Component {
 
   render() {
     const { anchorEl } = this.state
-    const { children, id, items } = this.props
+    const { children, id, items, href } = this.props
 
     return (
       <Fragment>
@@ -29,6 +29,7 @@ class HeaderButton extends React.Component {
           aria-owns={anchorEl ? id : null}
           aria-haspopup="true"
           onClick={this.handleClick}
+          href={href}
         >
           {children}
         </Button>
@@ -40,7 +41,12 @@ class HeaderButton extends React.Component {
             onClose={this.handleClose}
           >
             {items.map((item, i) => (
-              <MenuItem key={i} onClick={this.handleClose}>
+              <MenuItem
+                key={i}
+                component="a"
+                onClick={this.handleClose}
+                href={item.href}
+              >
                 {item.label}
               </MenuItem>
             ))}
