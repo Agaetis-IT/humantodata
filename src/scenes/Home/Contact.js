@@ -1,6 +1,7 @@
 import React from 'react'
 import { withStyles, Typography } from 'material-ui'
 import Separator from '../../components/Separator'
+import Content from '../../components/Content'
 
 const styles = theme => ({
   container: {
@@ -33,7 +34,7 @@ const styles = theme => ({
 })
 
 const Contact = ({ classes }) => (
-  <div id="contact" className={classes.container}>
+  <Content id="contact" className={classes.container}>
     <Typography className={classes.header} align="center" gutterBottom>
       Contactez-nous
     </Typography>
@@ -50,7 +51,7 @@ const Contact = ({ classes }) => (
       <a href="mailto:contact@humantodata.com">contact@humantodata.com</a> -{' '}
       <a href="www.humantodata.com">www.humantodata.com</a>
     </Typography>
-  </div>
+  </Content>
 )
 
 export default withStyles(styles)(Contact)

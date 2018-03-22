@@ -2,6 +2,7 @@ import React from 'react'
 import { withStyles, Typography } from 'material-ui'
 import Separator from '../../components/Separator'
 import teamImg from '../../images/team.png'
+import Content from '../../components/Content'
 
 const styles = theme => ({
   container: {
@@ -39,7 +40,7 @@ const styles = theme => ({
 })
 
 const Presentation = ({ classes }) => (
-  <div id="presentation" className={classes.container}>
+  <Content id="presentation" className={classes.container}>
     <Typography className={classes.header} align="center" gutterBottom>
       Qui sommes nous ?
     </Typography>
@@ -77,7 +78,7 @@ const Presentation = ({ classes }) => (
     <Typography variant="body2" className={classes.bullet} gutterBottom>
       Stratégie de traitement pour l’exploitation des données.
     </Typography>
-  </div>
+  </Content>
 )
 
 export default withStyles(styles)(Presentation)

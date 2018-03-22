@@ -1,6 +1,7 @@
 import React from 'react'
 import { withStyles, Typography } from 'material-ui'
 import Separator from '../../components/Separator'
+import Content from '../../components/Content'
 
 const styles = theme => ({
   container: {
@@ -22,7 +23,7 @@ const styles = theme => ({
 })
 
 const TravaillerEnsemble = ({ classes }) => (
-  <div id="travailler-ensemble" className={classes.container}>
+  <Content id="travailler-ensemble" className={classes.container}>
     <Typography className={classes.header} align="center" gutterBottom>
       Pourquoi travailler ensemble ?
     </Typography>
@@ -39,7 +40,7 @@ const TravaillerEnsemble = ({ classes }) => (
       <span className={classes.primary}>co-construire</span> un éco-système de
       production plus performant, plus efficient, plus stratégique.
     </Typography>
-  </div>
+  </Content>
 )
 
 export default withStyles(styles)(TravaillerEnsemble)

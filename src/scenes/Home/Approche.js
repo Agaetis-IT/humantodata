@@ -2,6 +2,7 @@ import React from 'react'
 import { withStyles, Typography, Grid, Hidden } from 'material-ui'
 import startsWithPeopleImg from '../../images/startsWithPeople.png'
 import yellowArrowImg from '../../images/yellowArrow.png'
+import Content from '../../components/Content'
 
 const styles = theme => ({
   container: {
@@ -63,31 +64,34 @@ const styles = theme => ({
 
 const Enjeu = ({ classes }) => (
   <div id="approche" className={classes.container}>
-    <div className={classes.header}>
-      <Typography className={classes.title}>
-        Notre approche : vous accompagner de façon{' '}
-        <span className={classes.primary}>innovante</span> et{' '}
-        <span className={classes.primary}>globale</span>
-      </Typography>
-    </div>
-    <Grid container>
-      <Grid item xs={12} sm={6}>
-        <Typography>
-          En supprimant les frontières traditionnelles de l’entreprise, la
-          digitalisation ouvre de nouveaux chemins et favorise l’innovation.
-          HumanToData est née de la volonté de 4 entreprises innovantes :
-          Agaetis, Deltamu, Phimeca Engineering, Pyramis Consulting.
+    <Content>
+      <div className={classes.header}>
+        <Typography className={classes.title}>
+          Notre approche : vous accompagner de façon{' '}
+          <span className={classes.primary}>innovante</span> et{' '}
+          <span className={classes.primary}>globale</span>
         </Typography>
+      </div>
+      <Grid container spacing={0}>
+        <Grid item xs={12} sm={6}>
+          <Typography>
+            En supprimant les frontières traditionnelles de l’entreprise, la
+            digitalisation ouvre de nouveaux chemins et favorise l’innovation.
+            HumanToData est née de la volonté de 4 entreprises innovantes :
+            Agaetis, Deltamu, Phimeca Engineering, Pyramis Consulting.
+          </Typography>
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <Typography>
+            Impliquées depuis plusieurs années dans l’optimisation des procédés
+            de fabrication, celles-ci ont décidé elles-mêmes d’innover en
+            dépassant leurs “frontières” – leurs expertises et leurs expériences
+            spécifiques – pour les mettre en commun.
+          </Typography>
+        </Grid>
       </Grid>
-      <Grid item xs={12} sm={6}>
-        <Typography>
-          Impliquées depuis plusieurs années dans l’optimisation des procédés de
-          fabrication, celles-ci ont décidé elles-mêmes d’innover en dépassant
-          leurs “frontières” – leurs expertises et leurs expériences spécifiques
-          – pour les mettre en commun.
-        </Typography>
-      </Grid>
-    </Grid>
+    </Content>
+
     <img
       className={classes.transformingFactoriesImg}
       src={startsWithPeopleImg}

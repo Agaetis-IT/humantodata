@@ -2,6 +2,7 @@ import React from 'react'
 import { withStyles, Typography, Grid, Hidden } from 'material-ui'
 import transformingFactoriesImg from '../../images/transformingFactories.png'
 import redArrowImg from '../../images/redArrow.png'
+import Content from '../../components/Content'
 
 const styles = theme => ({
   container: {
@@ -63,32 +64,34 @@ const styles = theme => ({
 
 const Enjeu = ({ classes }) => (
   <div id="enjeu" className={classes.container}>
-    <div className={classes.header}>
-      <Typography className={classes.title}>
-        Votre enjeu des 5 prochaines années :
-      </Typography>
-      <Typography className={classes.subtitle}>
-        réussir la digitalisation de votre industrie
-      </Typography>
-    </div>
-    <Grid container>
-      <Grid item xs={12} sm={6}>
-        <Typography>
-          Big Data, Usine du futur, Factory 4.0, IA… quels que soient les
-          concepts à la mode, la digitalisation de votre système de production
-          est un passage à la fois obligé et stimulant pour votre entreprise. Sa
-          capacité à innover et à se différencier en dépendent.
+    <Content>
+      <div className={classes.header}>
+        <Typography className={classes.title}>
+          Votre enjeu des 5 prochaines années :
         </Typography>
-      </Grid>
-      <Grid item xs={12} sm={6}>
-        <Typography>
-          Encore faut-il que ce passage s’effectue de façon pragmatique, en
-          partant de votre patrimoine data disponible, en vérifiant rapidement
-          l’efficacité des solutions proposées, en favorisant leur adoption par
-          l’ensemble de l’organisation, de l’opérateur jusqu’au dirigeant.
+        <Typography className={classes.subtitle}>
+          réussir la digitalisation de votre industrie
         </Typography>
+      </div>
+      <Grid container spacing={0}>
+        <Grid item xs={12} sm={6}>
+          <Typography>
+            Big Data, Usine du futur, Factory 4.0, IA… quels que soient les
+            concepts à la mode, la digitalisation de votre système de production
+            est un passage à la fois obligé et stimulant pour votre entreprise.
+            Sa capacité à innover et à se différencier en dépendent.
+          </Typography>
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <Typography>
+            Encore faut-il que ce passage s’effectue de façon pragmatique, en
+            partant de votre patrimoine data disponible, en vérifiant rapidement
+            l’efficacité des solutions proposées, en favorisant leur adoption
+            par l’ensemble de l’organisation, de l’opérateur jusqu’au dirigeant.
+          </Typography>
+        </Grid>
       </Grid>
-    </Grid>
+    </Content>
 
     <img
       className={classes.transformingFactoriesImg}

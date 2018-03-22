@@ -2,6 +2,7 @@ import React from 'react'
 import { withStyles, Typography } from 'material-ui'
 import Separator from '../../components/Separator'
 import Bullet from '../../components/Bullet'
+import Content from '../../components/Content'
 
 const styles = theme => ({
   container: {
@@ -23,7 +24,7 @@ const styles = theme => ({
 })
 
 const Intervenir = ({ classes }) => (
-  <div id="intervenir" className={classes.container}>
+  <Content id="intervenir" className={classes.container}>
     <Typography className={classes.header} align="center" gutterBottom>
       Comment nous pouvons intervenir ?
     </Typography>
@@ -46,7 +47,7 @@ const Intervenir = ({ classes }) => (
       <Bullet>3</Bullet> Déploiement pour industrialiser et étendre la démarche.
       Accompagnement à la conduite du changement.
     </Typography>
-  </div>
+  </Content>
 )
 
 export default withStyles(styles)(Intervenir)
