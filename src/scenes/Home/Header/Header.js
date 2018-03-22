@@ -7,6 +7,7 @@ import MenuIcon from 'material-ui-icons/Menu'
 
 const styles = theme => ({
   container: {
+    position: 'relative',
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-around',
@@ -17,6 +18,11 @@ const styles = theme => ({
   },
   actions: {
     alignSelf: 'flex-end',
+  },
+  drawerBtn: {
+    position: 'absolute',
+    right: 0,
+    top: 0,
   },
 })
 
@@ -35,9 +41,11 @@ const Header = class extends React.Component {
 
     return (
       <div className={classes.container}>
-        <IconButton onClick={this.toggleDrawer}>
-          <MenuIcon />
-        </IconButton>
+        <Hidden mdUp implementation="css" className={classes.drawerBtn}>
+          <IconButton onClick={this.toggleDrawer}>
+            <MenuIcon />
+          </IconButton>
+        </Hidden>
         <img className={classes.logo} src={logoImg} alt="logo" />
         <Hidden
           className={classes.actions}
