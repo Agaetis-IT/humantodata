@@ -26,7 +26,10 @@ const Header = ({ classes }) => (
         items={[
           { label: 'Vos enjeux', href: '#enjeu' },
           { label: 'Notre approche', href: '#approche' },
-          { label: 'Pourquoi travailler ensemble ?', href: '#travailler' },
+          {
+            label: 'Pourquoi travailler ensemble ?',
+            href: '#travailler-ensemble',
+          },
           { label: 'Comment nous pouvons intervenir ?', href: '#intervenir' },
         ]}
       >

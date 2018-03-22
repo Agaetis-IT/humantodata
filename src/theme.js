@@ -15,5 +15,9 @@ export default {
     body1: {
       fontSize: 16,
     },
+    body2: {
+      fontSize: 16,
+      color: 'rgba(0, 0, 0, 0.54)',
+    },
   },
 }
