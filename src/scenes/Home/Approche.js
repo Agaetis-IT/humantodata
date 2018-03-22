@@ -102,7 +102,7 @@ const Enjeu = ({ classes }) => (
         digitalisation réussie : Accroître la performance industrielle :
       </Typography>
       <div className={classes.list}>
-        <Hidden only="xs">
+        <Hidden only="xs" implementation="css">
           <img src={yellowArrowImg} className={classes.arrow} alt="" />
         </Hidden>
         <ul>

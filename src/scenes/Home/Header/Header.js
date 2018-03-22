@@ -1,13 +1,13 @@
 import React from 'react'
 import logoImg from '../../../images/logo.png'
-import { withStyles } from 'material-ui'
+import { withStyles, Hidden } from 'material-ui'
 import HeaderButton from './HeaderButton'
 
 const styles = theme => ({
   container: {
     display: 'flex',
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    justifyContent: 'space-around',
     padding: '10px 15px',
   },
   logo: {
@@ -21,7 +21,11 @@ const styles = theme => ({
 const Header = ({ classes }) => (
   <div className={classes.container}>
     <img className={classes.logo} src={logoImg} alt="logo" />
-    <div className={classes.actions}>
+    <Hidden
+      className={classes.actions}
+      only={['xs', 'sm']}
+      implementation="css"
+    >
       <HeaderButton
         items={[
           { label: 'Vos enjeux', href: '#enjeu' },
@@ -37,7 +41,7 @@ const Header = ({ classes }) => (
       </HeaderButton>
       <HeaderButton href="#presentation">Qui sommes nous ?</HeaderButton>
       <HeaderButton href="#contact">Nous contacter</HeaderButton>
-    </div>
+    </Hidden>
   </div>
 )
 

@@ -104,7 +104,7 @@ const Enjeu = ({ classes }) => (
         Accroître la performance industrielle :
       </Typography>
       <div className={classes.list}>
-        <Hidden only="xs">
+        <Hidden only="xs" implementation="css">
           <img src={redArrowImg} className={classes.arrow} alt="" />
         </Hidden>
         <ul>

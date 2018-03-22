@@ -14,7 +14,7 @@ const styles = theme => ({
       color: theme.palette.primary.main,
     },
     img: {
-      maxWidth: '100%',
+      maxWidth: '100vw',
     },
   },
   container: {
