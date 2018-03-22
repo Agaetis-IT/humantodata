@@ -4,6 +4,7 @@ import Enjeu from './Enjeu'
 import withStyles from 'material-ui/styles/withStyles'
 import Approche from './Approche'
 import TravaillerEnsemble from './TravaillerEnsemble'
+import Intervenir from './Intervenir'
 
 const styles = theme => ({
   content: {
@@ -19,6 +20,7 @@ const Home = ({ classes }) => (
       <Enjeu />
       <Approche />
       <TravaillerEnsemble />
+      <Intervenir />
     </div>
   </Fragment>
 )
