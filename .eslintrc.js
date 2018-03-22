@@ -1,0 +1,29 @@
+module.exports = {
+  parser: "babel-eslint",
+  extends: [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "prettier",
+    "prettier/react"
+  ],
+  plugins: ["react", "prettier"],
+  env: {
+    node: true,
+    browser: true,
+    es6: true
+  },
+  rules: {
+    "react/prop-types": 0,
+    "react/display-name": 0,
+    "react/no-unescaped-entities": 0,
+    "no-unused-vars": ["error", { args: "none" }],
+    "prettier/prettier": [
+      "error",
+      {
+        semi: false,
+        singleQuote: true,
+        trailingComma: "es5"
+      }
+    ]
+  }
+};
