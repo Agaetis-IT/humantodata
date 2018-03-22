@@ -1,5 +1,5 @@
 import React from 'react'
-import { withStyles, Typography, Grid } from 'material-ui'
+import { withStyles, Typography, Grid, Hidden } from 'material-ui'
 import transformingFactoriesImg from '../../images/transformingFactories.png'
 import redArrowImg from '../../images/redArrow.png'
 
@@ -30,6 +30,9 @@ const styles = theme => ({
     display: 'block',
     margin: 'auto',
   },
+  arrow: {
+    paddingRight: 30,
+  },
   block: {
     backgroundColor: theme.palette.secondary[200],
     padding: 15,
@@ -40,6 +43,8 @@ const styles = theme => ({
     alignItems: 'center',
     '& ul': {
       listStyle: 'none',
+      margin: 0,
+      padding: 0,
     },
     '& li > *': {
       margin: '10px 0',
@@ -84,11 +89,13 @@ const Enjeu = ({ classes }) => (
         </Typography>
       </Grid>
     </Grid>
+
     <img
       className={classes.transformingFactoriesImg}
       src={transformingFactoriesImg}
       alt=""
     />
+
     <div className={classes.block}>
       <Typography className={classes.blocTitle} gutterBottom>
         Vos défis concrets :
@@ -97,7 +104,9 @@ const Enjeu = ({ classes }) => (
         Accroître la performance industrielle :
       </Typography>
       <div className={classes.list}>
-        <img src={redArrowImg} alt="" />
+        <Hidden only="xs">
+          <img src={redArrowImg} className={classes.arrow} alt="" />
+        </Hidden>
         <ul>
           <li>
             <Typography>

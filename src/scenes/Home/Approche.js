@@ -1,5 +1,5 @@
 import React from 'react'
-import { withStyles, Typography, Grid } from 'material-ui'
+import { withStyles, Typography, Grid, Hidden } from 'material-ui'
 import startsWithPeopleImg from '../../images/startsWithPeople.png'
 import yellowArrowImg from '../../images/yellowArrow.png'
 
@@ -27,6 +27,9 @@ const styles = theme => ({
     display: 'block',
     margin: 'auto',
   },
+  arrow: {
+    paddingRight: 30,
+  },
   block: {
     backgroundColor: theme.palette.secondary[400],
     padding: 15,
@@ -40,6 +43,8 @@ const styles = theme => ({
     alignItems: 'center',
     '& ul': {
       listStyle: 'none',
+      margin: 0,
+      padding: 0,
     },
     '& li > *': {
       margin: '10px 0',
@@ -97,7 +102,9 @@ const Enjeu = ({ classes }) => (
         digitalisation réussie : Accroître la performance industrielle :
       </Typography>
       <div className={classes.list}>
-        <img src={yellowArrowImg} alt="" />
+        <Hidden only="xs">
+          <img src={yellowArrowImg} className={classes.arrow} alt="" />
+        </Hidden>
         <ul>
           <li>
             <Typography>
