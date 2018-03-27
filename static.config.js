@@ -11,7 +11,6 @@ import {
 import theme from './src/theme'
 
 export default {
-  basePath: 'humantodata',
   webpack: previousConfig => {
     const previousEntry = Array.isArray(previousConfig.entry)
       ? previousConfig.entry
