@@ -13,9 +13,12 @@ import theme from './src/theme'
 export default {
   basePath: 'humantodata',
   webpack: previousConfig => {
+    const previousEntry = Array.isArray(previousConfig.entry)
+      ? previousConfig.entry
+      : [previousConfig.entry]
     return {
       ...previousConfig,
-      entry: ['babel-polyfill', ...previousConfig.entry],
+      entry: ['babel-polyfill', ...previousEntry],
     }
   },
   getRoutes: async () => {
