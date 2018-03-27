@@ -18,9 +18,6 @@ export default {
       entry: ['babel-polyfill', ...previousConfig.entry],
     }
   },
-  getSiteData: () => ({
-    title: 'React Static',
-  }),
   getRoutes: async () => {
     return [
       {
@@ -73,6 +70,7 @@ export default {
               href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
               rel="stylesheet"
             />
+            <title>HumanToData</title>
           </Head>
           <Body>
             {children}
