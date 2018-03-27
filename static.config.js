@@ -12,6 +12,12 @@ import theme from './src/theme'
 
 export default {
   basePath: 'humantodata',
+  webpack: previousConfig => {
+    return {
+      ...previousConfig,
+      entry: ['babel-polyfill', ...previousConfig.entry],
+    }
+  },
   getSiteData: () => ({
     title: 'React Static',
   }),

@@ -12,6 +12,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
     "classnames": "^2.2.5",
     "material-ui": "^1.0.0-beta.37",
     "material-ui-icons": "^1.0.0-beta.36",
@@ -19,7 +20,7 @@
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-router": "^4.2.0",
-    "react-slick": "^0.21.0",
+    "react-slick": "^0.20.0",
     "react-static": "^5.6.2",
     "slick-carousel": "^1.8.1",
     "uuid": "^3.2.1"
