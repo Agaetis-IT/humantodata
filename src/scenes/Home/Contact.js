@@ -49,7 +49,7 @@ const Contact = ({ classes }) => (
       Centre d’Affaires du Zénith - 48 rue de Sarliève - 63800 Cournon
       d’Auvergne - France{' '}
       <a href="mailto:contact@humantodata.com">contact@humantodata.com</a> -{' '}
-      <a href="www.humantodata.com">www.humantodata.com</a>
+      <a href="http://www.humantodata.com">www.humantodata.com</a>
     </Typography>
   </Content>
 )
