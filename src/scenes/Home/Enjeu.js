@@ -65,14 +65,14 @@ const styles = theme => ({
 const Enjeu = ({ classes }) => (
   <div id="enjeu" className={classes.container}>
     <Content>
-      <div className={classes.header}>
+      <h1 className={classes.header}>
         <Typography className={classes.title}>
           Votre enjeu des 5 prochaines années :
         </Typography>
         <Typography className={classes.subtitle}>
           réussir la digitalisation de votre industrie
         </Typography>
-      </div>
+      </h1>
       <Grid container>
         <Grid item xs={12} sm={6}>
           <Typography>
@@ -96,19 +96,19 @@ const Enjeu = ({ classes }) => (
     <img
       className={classes.transformingFactoriesImg}
       src={transformingFactoriesImg}
-      alt=""
+      alt="Transforming factories..."
     />
 
     <div className={classes.block}>
-      <Typography className={classes.blocTitle} gutterBottom>
+      <Typography component="h2" className={classes.blocTitle} gutterBottom>
         Vos défis concrets :
       </Typography>
-      <Typography className={classes.blocSubtitle}>
+      <Typography component="h3" className={classes.blocSubtitle}>
         Accroître la performance industrielle :
       </Typography>
       <div className={classes.list}>
         <Hidden only="xs" implementation="css">
-          <img src={redArrowImg} className={classes.arrow} alt="" />
+          <img src={redArrowImg} className={classes.arrow} alt="Arrow" />
         </Hidden>
         <ul>
           <li>

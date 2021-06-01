@@ -46,7 +46,7 @@ const Header = class extends React.Component {
             <MenuIcon />
           </IconButton>
         </Hidden>
-        <img className={classes.logo} src={logoImg} alt="logo" />
+        <img className={classes.logo} src={logoImg} alt="Logo" />
         <Hidden
           className={classes.actions}
           only={['xs', 'sm']}

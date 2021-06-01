@@ -41,7 +41,7 @@ const styles = theme => ({
 
 const Presentation = ({ classes }) => (
   <Content id="presentation" className={classes.container}>
-    <Typography className={classes.header} align="center" gutterBottom>
+    <Typography component="h2" className={classes.header} align="center" gutterBottom>
       Qui sommes nous ?
     </Typography>
     <Typography align="center" gutterBottom>
@@ -60,7 +60,7 @@ const Presentation = ({ classes }) => (
       <b>digitalisation effective et efficiente des industries.</b>
     </Typography>
     <Separator className={classes.separator} />
-    <img className={classes.team} src={teamImg} alt="team" />
+    <img className={classes.team} src={teamImg} alt="Our team" />
     <Typography variant="body2" gutterBottom>
       Ensemble, nous vous proposons de co-construire une solution collaborative
       à forte valeur ajoutée reposant sur la combinaison des 4 savoir-faire

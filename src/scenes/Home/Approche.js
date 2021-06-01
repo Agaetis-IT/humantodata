@@ -66,7 +66,7 @@ const Enjeu = ({ classes }) => (
   <div id="approche" className={classes.container}>
     <Content>
       <div className={classes.header}>
-        <Typography className={classes.title}>
+        <Typography component="h2" className={classes.title}>
           Notre approche : vous accompagner de façon{' '}
           <span className={classes.primary}>innovante</span> et{' '}
           <span className={classes.primary}>globale</span>
@@ -95,19 +95,19 @@ const Enjeu = ({ classes }) => (
     <img
       className={classes.transformingFactoriesImg}
       src={startsWithPeopleImg}
-      alt=""
+      alt="...starts with people."
     />
     <div className={classes.block}>
-      <Typography className={classes.blocTitle} gutterBottom>
+      <Typography component="h2" className={classes.blocTitle} gutterBottom>
         Notre intervention à vos côtés :
       </Typography>
-      <Typography className={classes.blocSubtitle}>
+      <Typography component="h3" className={classes.blocSubtitle}>
         Une démarche globale qui s’appuie sur les 4 fondamentaux d’une
         digitalisation réussie : Accroître la performance industrielle :
       </Typography>
       <div className={classes.list}>
         <Hidden only="xs" implementation="css">
-          <img src={yellowArrowImg} className={classes.arrow} alt="" />
+          <img src={yellowArrowImg} className={classes.arrow} alt="Arrow" />
         </Hidden>
         <ul>
           <li>

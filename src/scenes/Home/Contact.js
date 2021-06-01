@@ -35,7 +35,7 @@ const styles = theme => ({
 
 const Contact = ({ classes }) => (
   <Content id="contact" className={classes.container}>
-    <Typography className={classes.header} align="center" gutterBottom>
+    <Typography component="h2" className={classes.header} align="center" gutterBottom>
       Contactez-nous
     </Typography>
     <Typography align="center" gutterBottom>
@@ -49,7 +49,7 @@ const Contact = ({ classes }) => (
       Centre d’Affaires du Zénith - 48 rue de Sarliève - 63800 Cournon
       d’Auvergne - France{' '}
       <a href="mailto:contact@humantodata.com">contact@humantodata.com</a> -{' '}
-      <a href="http://www.humantodata.com">www.humantodata.com</a>
+      <a href="https://fr.linkedin.com/company/humantodata/">LinkedIn</a>
     </Typography>
   </Content>
 )
