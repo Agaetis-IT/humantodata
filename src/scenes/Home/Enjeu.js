@@ -73,7 +73,7 @@ const Enjeu = ({ classes }) => (
           réussir la digitalisation de votre industrie
         </Typography>
       </div>
-      <Grid container spacing={0}>
+      <Grid container>
         <Grid item xs={12} sm={6}>
           <Typography>
             Big Data, Usine du futur, Factory 4.0, IA… quels que soient les

@@ -72,7 +72,7 @@ const Enjeu = ({ classes }) => (
           <span className={classes.primary}>globale</span>
         </Typography>
       </div>
-      <Grid container spacing={0}>
+      <Grid container>
         <Grid item xs={12} sm={6}>
           <Typography>
             En supprimant les frontières traditionnelles de l’entreprise, la
