@@ -678,7 +678,7 @@ var universalOptions = {
 
 var t_0 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
   id: '../src/scenes/Home/Home',
-  file: 'C:/Users/jusson/Projects/humantodata/dist/react-static-routes.js',
+  file: 'C:/Users/Stagiaire1/Documents/HumanToData/humantodata/dist/react-static-routes.js',
   load: function load() {
     return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 10)), (0, _importCss3.default)('src/scenes/Home/Home', {
       disableWarnings: true
@@ -1500,7 +1500,7 @@ var Header = function (_React$Component) {
             _react2.default.createElement(_Menu2.default, null)
           )
         ),
-        _react2.default.createElement('img', { className: classes.logo, src: _logo2.default, alt: 'logo' }),
+        _react2.default.createElement('img', { className: classes.logo, src: _logo2.default, alt: 'Logo' }),
         _react2.default.createElement(
           _materialUi.Hidden,
           {
@@ -1878,7 +1878,7 @@ var Enjeu = function Enjeu(_ref) {
       _Content2.default,
       null,
       _react2.default.createElement(
-        'div',
+        'h1',
         { className: classes.header },
         _react2.default.createElement(
           _materialUi.Typography,
@@ -1893,7 +1893,7 @@ var Enjeu = function Enjeu(_ref) {
       ),
       _react2.default.createElement(
         _materialUi.Grid,
-        { container: true, spacing: 0 },
+        { container: true },
         _react2.default.createElement(
           _materialUi.Grid,
           { item: true, xs: 12, sm: 6 },
@@ -1917,19 +1917,19 @@ var Enjeu = function Enjeu(_ref) {
     _react2.default.createElement('img', {
       className: classes.transformingFactoriesImg,
       src: _transformingFactories2.default,
-      alt: ''
+      alt: 'Transforming factories...'
     }),
     _react2.default.createElement(
       'div',
       { className: classes.block },
       _react2.default.createElement(
         _materialUi.Typography,
-        { className: classes.blocTitle, gutterBottom: true },
+        { component: 'h2', className: classes.blocTitle, gutterBottom: true },
         'Vos d\xE9fis concrets :'
       ),
       _react2.default.createElement(
         _materialUi.Typography,
-        { className: classes.blocSubtitle },
+        { component: 'h3', className: classes.blocSubtitle },
         'Accro\xEEtre la performance industrielle :'
       ),
       _react2.default.createElement(
@@ -1938,7 +1938,7 @@ var Enjeu = function Enjeu(_ref) {
         _react2.default.createElement(
           _materialUi.Hidden,
           { only: 'xs', implementation: 'css' },
-          _react2.default.createElement('img', { src: _redArrow2.default, className: classes.arrow, alt: '' })
+          _react2.default.createElement('img', { src: _redArrow2.default, className: classes.arrow, alt: 'Arrow' })
         ),
         _react2.default.createElement(
           'ul',
@@ -2118,7 +2118,7 @@ var Enjeu = function Enjeu(_ref) {
         { className: classes.header },
         _react2.default.createElement(
           _materialUi.Typography,
-          { className: classes.title },
+          { component: 'h2', className: classes.title },
           'Notre approche : vous accompagner de fa\xE7on',
           ' ',
           _react2.default.createElement(
@@ -2137,7 +2137,7 @@ var Enjeu = function Enjeu(_ref) {
       ),
       _react2.default.createElement(
         _materialUi.Grid,
-        { container: true, spacing: 0 },
+        { container: true },
         _react2.default.createElement(
           _materialUi.Grid,
           { item: true, xs: 12, sm: 6 },
@@ -2161,19 +2161,19 @@ var Enjeu = function Enjeu(_ref) {
     _react2.default.createElement('img', {
       className: classes.transformingFactoriesImg,
       src: _startsWithPeople2.default,
-      alt: ''
+      alt: '...starts with people.'
     }),
     _react2.default.createElement(
       'div',
       { className: classes.block },
       _react2.default.createElement(
         _materialUi.Typography,
-        { className: classes.blocTitle, gutterBottom: true },
+        { component: 'h2', className: classes.blocTitle, gutterBottom: true },
         'Notre intervention \xE0 vos c\xF4t\xE9s :'
       ),
       _react2.default.createElement(
         _materialUi.Typography,
-        { className: classes.blocSubtitle },
+        { component: 'h3', className: classes.blocSubtitle },
         'Une d\xE9marche globale qui s\u2019appuie sur les 4 fondamentaux d\u2019une digitalisation r\xE9ussie : Accro\xEEtre la performance industrielle :'
       ),
       _react2.default.createElement(
@@ -2182,7 +2182,7 @@ var Enjeu = function Enjeu(_ref) {
         _react2.default.createElement(
           _materialUi.Hidden,
           { only: 'xs', implementation: 'css' },
-          _react2.default.createElement('img', { src: _yellowArrow2.default, className: classes.arrow, alt: '' })
+          _react2.default.createElement('img', { src: _yellowArrow2.default, className: classes.arrow, alt: 'Arrow' })
         ),
         _react2.default.createElement(
           'ul',
@@ -2319,7 +2319,7 @@ var TravaillerEnsemble = function TravaillerEnsemble(_ref) {
     { id: 'travailler-ensemble', className: classes.container },
     _react2.default.createElement(
       _materialUi.Typography,
-      { className: classes.header, align: 'center', gutterBottom: true },
+      { component: 'h2', className: classes.header, align: 'center', gutterBottom: true },
       'Pourquoi travailler ensemble ?'
     ),
     _react2.default.createElement(
@@ -2404,7 +2404,7 @@ var Intervenir = function Intervenir(_ref) {
     { id: 'intervenir', className: classes.container },
     _react2.default.createElement(
       _materialUi.Typography,
-      { className: classes.header, align: 'center', gutterBottom: true },
+      { component: 'h2', className: classes.header, align: 'center', gutterBottom: true },
       'Comment nous pouvons intervenir ?'
     ),
     _react2.default.createElement(
@@ -2574,7 +2574,7 @@ var Presentation = function Presentation(_ref) {
     { id: 'presentation', className: classes.container },
     _react2.default.createElement(
       _materialUi.Typography,
-      { className: classes.header, align: 'center', gutterBottom: true },
+      { component: 'h2', className: classes.header, align: 'center', gutterBottom: true },
       'Qui sommes nous ?'
     ),
     _react2.default.createElement(
@@ -2584,29 +2584,29 @@ var Presentation = function Presentation(_ref) {
       ' ',
       _react2.default.createElement(
         'a',
-        { href: 'https://www.linkedin.com/company/agaetis/' },
+        { href: 'https://www.agaetis.fr/' },
         'Agaetis'
       ),
       ',',
       ' ',
       _react2.default.createElement(
         'a',
-        { href: 'https://www.linkedin.com/company/delta-mu/' },
+        { href: 'https://www.deltamu.com/' },
         'Deltamu'
       ),
       ',',
       ' ',
       _react2.default.createElement(
         'a',
-        { href: 'https://www.linkedin.com/company/pyramis-consulting/' },
-        'Pyramis Consulting'
+        { href: 'https://fr.linkedin.com/company/effi-cairn/' },
+        'Effi\'cairn'
       ),
       ' ',
       'et',
       ' ',
       _react2.default.createElement(
         'a',
-        { href: 'https://www.linkedin.com/company/phimeca-engineering/' },
+        { href: 'https://www.phimeca.com/' },
         'PHIMECA Engineering'
       ),
       ' ',
@@ -2619,7 +2619,7 @@ var Presentation = function Presentation(_ref) {
       )
     ),
     _react2.default.createElement(_Separator2.default, { className: classes.separator }),
-    _react2.default.createElement('img', { className: classes.team, src: _team2.default, alt: 'team' }),
+    _react2.default.createElement('img', { className: classes.team, src: _team2.default, alt: 'Our team' }),
     _react2.default.createElement(
       _materialUi.Typography,
       { variant: 'body2', gutterBottom: true },
@@ -2654,7 +2654,7 @@ exports.default = (0, _materialUi.withStyles)(styles)(Presentation);
 /* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/team.230a47fa.png";
+module.exports = __webpack_require__.p + "static/team.2295e27e.png";
 
 /***/ }),
 /* 46 */
@@ -2722,7 +2722,7 @@ var Contact = function Contact(_ref) {
     { id: 'contact', className: classes.container },
     _react2.default.createElement(
       _materialUi.Typography,
-      { className: classes.header, align: 'center', gutterBottom: true },
+      { component: 'h2', className: classes.header, align: 'center', gutterBottom: true },
       'Contactez-nous'
     ),
     _react2.default.createElement(
@@ -2745,8 +2745,8 @@ var Contact = function Contact(_ref) {
       ' ',
       _react2.default.createElement(
         'a',
-        { href: 'www.humantodata.com' },
-        'www.humantodata.com'
+        { href: 'https://fr.linkedin.com/company/humantodata/' },
+        'LinkedIn'
       )
     )
   );
@@ -2999,4 +2999,4 @@ exports.default = {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.d958c9f5.js.map
+//# sourceMappingURL=static.11735f12.js.map
