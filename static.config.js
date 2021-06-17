@@ -74,6 +74,7 @@ export default {
               rel="stylesheet"
             />
             <title>HumanToData</title>
+            <link rel="canonical" href="https://www.humantodata.com" />
           </Head>
           <Body>
             {children}

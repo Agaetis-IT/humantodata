@@ -41,18 +41,18 @@ const styles = theme => ({
 
 const Presentation = ({ classes }) => (
   <Content id="presentation" className={classes.container}>
-    <Typography className={classes.header} align="center" gutterBottom>
+    <Typography component="h2" className={classes.header} align="center" gutterBottom>
       Qui sommes nous ?
     </Typography>
     <Typography align="center" gutterBottom>
       HumanToData est une marque du consortium{' '}
-      <a href="https://www.linkedin.com/company/agaetis/">Agaetis</a>,{' '}
-      <a href="https://www.linkedin.com/company/delta-mu/">Deltamu</a>,{' '}
-      <a href="https://www.linkedin.com/company/pyramis-consulting/">
-        Pyramis Consulting
+      <a href="https://www.agaetis.fr/">Agaetis</a>,{' '}
+      <a href="https://www.deltamu.com/">Deltamu</a>,{' '}
+      <a href="https://fr.linkedin.com/company/effi-cairn/">
+        Effi'cairn
       </a>{' '}
       et{' '}
-      <a href="https://www.linkedin.com/company/phimeca-engineering/">
+      <a href="https://www.phimeca.com/">
         PHIMECA Engineering
       </a>{' '}
       qui ont signé un contrat de partenariat pour la mise en place d’une offre
@@ -60,7 +60,7 @@ const Presentation = ({ classes }) => (
       <b>digitalisation effective et efficiente des industries.</b>
     </Typography>
     <Separator className={classes.separator} />
-    <img className={classes.team} src={teamImg} alt="team" />
+    <img className={classes.team} src={teamImg} alt="Our team" />
     <Typography variant="body2" gutterBottom>
       Ensemble, nous vous proposons de co-construire une solution collaborative
       à forte valeur ajoutée reposant sur la combinaison des 4 savoir-faire

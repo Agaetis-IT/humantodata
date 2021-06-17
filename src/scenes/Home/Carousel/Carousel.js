@@ -31,7 +31,8 @@ export default () => (
     <div>
       <Slide align="left">
         • Définition et mise en oeuvre de la stratégie et des outils IT<br />
-        • Modélisation des phénomènes et DataScience<br />• Véracité des données<br />
+        • Modélisation des phénomènes et DataScience<br />
+        • Véracité des données<br />
         • Pilotage de la performance et prise en compte du facteur humain
       </Slide>
     </div>

@@ -24,7 +24,7 @@ const styles = theme => ({
 
 const TravaillerEnsemble = ({ classes }) => (
   <Content id="travailler-ensemble" className={classes.container}>
-    <Typography className={classes.header} align="center" gutterBottom>
+    <Typography component="h2" className={classes.header} align="center" gutterBottom>
       Pourquoi travailler ensemble ?
     </Typography>
     <Typography align="center" gutterBottom>

@@ -25,7 +25,7 @@ const styles = theme => ({
 
 const Intervenir = ({ classes }) => (
   <Content id="intervenir" className={classes.container}>
-    <Typography className={classes.header} align="center" gutterBottom>
+    <Typography component="h2" className={classes.header} align="center" gutterBottom>
       Comment nous pouvons intervenir ?
     </Typography>
     <Typography align="center" gutterBottom>
