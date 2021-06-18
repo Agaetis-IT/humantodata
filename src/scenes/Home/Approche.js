@@ -78,7 +78,7 @@ const Enjeu = ({ classes }) => (
             En supprimant les frontières traditionnelles de l’entreprise, la
             digitalisation ouvre de nouveaux chemins et favorise l’innovation.
             HumanToData est née de la volonté de 4 entreprises innovantes :
-            Agaetis, Deltamu, Phimeca Engineering, Pyramis Consulting.
+            Agaetis, Deltamu, Effi'cairn et Phimeca Engineering.
           </Typography>
         </Grid>
         <Grid item xs={12} sm={6}>
