@@ -67,7 +67,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/humantodata/";
+/******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = 11);
@@ -2144,7 +2144,7 @@ var Enjeu = function Enjeu(_ref) {
           _react2.default.createElement(
             _materialUi.Typography,
             null,
-            'En supprimant les fronti\xE8res traditionnelles de l\u2019entreprise, la digitalisation ouvre de nouveaux chemins et favorise l\u2019innovation. HumanToData est n\xE9e de la volont\xE9 de 4 entreprises innovantes : Agaetis, Deltamu, Phimeca Engineering, Pyramis Consulting.'
+            'En supprimant les fronti\xE8res traditionnelles de l\u2019entreprise, la digitalisation ouvre de nouveaux chemins et favorise l\u2019innovation. HumanToData est n\xE9e de la volont\xE9 de 4 entreprises innovantes : Agaetis, Deltamu, Effi\'cairn et Phimeca Engineering.'
           )
         ),
         _react2.default.createElement(
@@ -2999,4 +2999,4 @@ exports.default = {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.11735f12.js.map
+//# sourceMappingURL=static.483ee989.js.map
